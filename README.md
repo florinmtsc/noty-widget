@@ -33,6 +33,6 @@ Example:<br/>
             &nbsp;&nbsp;&nbsp;&nbsp;<code>'text' => 'Error',</code><br/>
             &nbsp;&nbsp;&nbsp;&nbsp;<code>'type' => 'error',</code><br/>
             &nbsp;&nbsp;&nbsp;&nbsp;<code>'callback' => [<br/><br/></code><br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;<code>'onShow' => 'function() {}', // javascript function </code><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<code>'onShow' => 'function() {console.log("a");}', // javascript function </code><br/>
             &nbsp;&nbsp;&nbsp;&nbsp;<code>]</code><br/>
 <code>]]);</code></code><br/>
