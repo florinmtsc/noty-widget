@@ -28,11 +28,11 @@ The <em>text</em> option stores the notification message and the <em>type</em> s
 
 <b>Using Callback functions</b>
 <p>Noty plugin gives the option to call custom functions when events occur. To attach the callback functions just put <em>callback</em></p> 
-Example:
-<code>echo yii\notywidget\AlertWidget::widget(['options' => [
-            'text' => 'Error', 
-            'type' => 'error', 
-            'callback' => [
-              'onShow' => 'function() {}', // javascript function
-            ]
-]]);</code>
+Example:<br/>
+<code>echo yii\notywidget\AlertWidget::widget(['options' => [</code><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<code>'text' => 'Error',</code><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<code>'type' => 'error',</code><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<code>'callback' => [<br/><br/></code><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<code>'onShow' => 'function() {}', // javascript function </code><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<code>]</code><br/>
+<code>]]);</code></code><br/>
