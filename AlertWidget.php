@@ -1,5 +1,5 @@
 <?php
-namespace florinmtsc\notywidget\;
+namespace florinmtsc\notywidget;
 
 use Yii;
 use yii\base\Widget;;
