@@ -1,6 +1,6 @@
 <?php
 
-namespace yii\notywidget\AlertAsset;
+namespace florinmtsc\notywidget\AlertAsset;
 
 use \yii\web\AssetBundle;
 

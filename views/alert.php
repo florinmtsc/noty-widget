@@ -1,6 +1,6 @@
 <?php
 
-use yii\notywidget\AlertAsset\AlertAsset;
+use florinmtsc\notywidget\AlertAsset\AlertAsset;
 
 AlertAsset::register($this, $options);
 ?>

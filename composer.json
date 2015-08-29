@@ -27,8 +27,8 @@
 
     "autoload": {
         "psr-4": {
-            "yii\\notywidget\\": ".",
-			"yii\\notywidget\\AlertAsset\\": "./AlertAsset/"
+            "florinmtsc\\notywidget\\": ".",
+			"florinmtsc\\notywidget\\AlertAsset\\": "./AlertAsset/"
         }
     }
 }
