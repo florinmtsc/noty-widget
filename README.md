@@ -7,16 +7,16 @@
 
 <h1>Install</h1>
 
-<h3>Using <em>Composer</em></h3>
+<h4>Using <em>Composer</em></h4>
 
-Type <code>composer require florinmtsc/noty-widget</code> in your yii 2 application root and the plugin will be added to your composer.json file.
+Type <code><b>composer require florinmtsc/noty-widget</b></code> in your yii 2 application root and the plugin will be added to your composer.json file.
 
 <h3>Manual install</h3>
 <ul>
-  <li><h3>Git bash</h3><br/>
-  <p>Type <code>git clone https://github.com/florinmtsc/noty-widget.git</code> where you want to store the widget folder and then adjust the namespaces accordingly in <em><b>AlertAsset.php</b> and <b>AlertWidget.php</b></em></p>
+  <li><b>Git bash</b><br/>
+  <p>Type <code><b>git clone https://github.com/florinmtsc/noty-widget.git</b></code> where you want to store the widget folder and then adjust the namespaces accordingly in <em><b>AlertAsset.php</b> and <b>AlertWidget.php</b></em></p>
   </li>
-  <li><h3>Download zip archive</h3></li>
+  <li><b>Download zip archive</b></li>
   <p>Extract the archive content where you want to store the widget and adjust the namespaces accordingly.</p>
 </ul>
 
