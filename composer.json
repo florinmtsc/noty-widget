@@ -19,7 +19,7 @@
             "email": "florin.mtsc@gmail.com"
         }
     ],
-	"minimum-stability": "dev",
+	"minimum-stability": "stable",
     "require": {
         "yiisoft/yii2": "*",
 		"npm-asset/noty": "<=2.3.6"

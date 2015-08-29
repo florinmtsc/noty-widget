@@ -9,8 +9,8 @@ class AlertAsset extends AssetBundle
     public $sourcePath = "@npm/noty";
 
     public $js = [
-        'js/noty/packaged/jquery.noty.packaged.min.js',
         'js/noty/jquery.noty.js',
+        'js/noty/packaged/jquery.noty.packaged.min.js',
         'js/noty/promise.js',
         'js/noty/layouts/topRight.js',
         'js/noty/layouts/center.js',
@@ -50,9 +50,9 @@ class AlertAsset extends AssetBundle
             'dismissQueue' => true, // If you want to use queue feature set this true
             'template' => '<div class="noty_message"><span class="noty_text"></span><div class="noty_close"></div></div>',
             'animation' => [
-                'open' => "animated bounceInRight", // or Animate.css class names like=> 'animated bounceInLeft'
-                'close' => "animated bounceOutRight", // or Animate.css class names like=> 'animated bounceOutLeft'
-                'easing' => 'swing',
+                'open' => ['height' => 'toggle'], // jQuery animate function property object
+                'close' => ['height' => 'toggle'], // jQuery animate function property object
+                'easing' => 'swing', // easing
                 'speed' => 500 // opening & closing animation speed
             ],
             'timeout' => false, // delay for closing event. Set false for sticky notifications
