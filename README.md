@@ -25,3 +25,14 @@ Type <code><b>composer require florinmtsc/noty-widget</b></code> in your yii 2 a
 <p>Where <em><b>$options</b></em> is an array with all the options available on the plugin page. Please visit the plugin <a href="http://ned.im/noty/#/about">official page</a> for documentation on the options available.</p>
 <b>In order to display the notification, you have to make sure you have <em>text</em> and <em>type</em> key values set in $options array.</b>
 The <em>text</em> option stores the notification message and the <em>type</em> stores the type of the notification: <em>Alert</em>, <em>Success</em>, <em>Error</em>, <em>Warning</em>, <em>Information</em>, <em>Confirm</em>
+
+<b>Using Callback functions</b>
+<p>Noty plugin gives the option to call custom functions when events occur. To attach the callback functions just put <em>callback</em></p> 
+Example:
+<code>echo yii\notywidget\AlertWidget::widget(['options' => [
+            'text' => 'Error', 
+            'type' => 'error', 
+            'callback' => [
+              'onShow' => 'function() {}', // javascript function
+            ]
+]]);</code>
