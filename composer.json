@@ -1,0 +1,34 @@
+{
+    "name": "florinmtsc/noty-widget",
+
+    "type": "yii2-extension",
+
+    "description": "Noty plugin integration for the Yii 2 framework",
+    "keywords": ["yii2", "noty", "widget"],
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/florinmtsc/noty-widget/issues",
+        "forum": "http://www.yiiframework.com/forum/",
+        "wiki": "https://github.com/florinmtsc/noty-widget/wiki",
+        "irc": "irc://irc.freenode.net/yii",
+        "source": "https://github.com/florinmtsc/noty-widget"
+    },
+    "authors": [
+        {
+            "name": "Florin Mateescu",
+            "email": "florin.mtsc@gmail.com"
+        }
+    ],
+	"minimum-stability": "dev",
+    "require": {
+        "yiisoft/yii2": "*",
+		"npm-asset/noty": "<=2.3.6"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "yii\\notywidget\\": ".",
+			"yii\\notywidget\\AlertAsset\\": "./AlertAsset/"
+        }
+    }
+}
