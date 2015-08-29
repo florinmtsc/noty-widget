@@ -3,7 +3,7 @@
 
 <em>The credits for this great jquery plugin goes to https://github.com/needim/noty. <b>This is just an Yii2 widget developed based on this plugin</b>
 <br/>
-<em>It has integrated the <b><a href="https://daneden.github.io/animate.css/">animate.css</a></b> for great transition effects</em>
+<em>If you want great css transition use <b><a href="https://daneden.github.io/animate.css/">animate.css</a></b>, also stated in noty official page</em>
 
 <h1>Install</h1>
 
