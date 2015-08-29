@@ -4,6 +4,12 @@ namespace florinmtsc\notywidget\AlertAsset;
 
 use \yii\web\AssetBundle;
 
+/**
+ * Widget AssetBundle
+ *
+ * Class AlertAsset
+ * @package florinmtsc\notywidget\AlertAsset
+ */
 class AlertAsset extends AssetBundle
 {
     public $sourcePath = "@npm/noty";

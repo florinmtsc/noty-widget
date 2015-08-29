@@ -4,6 +4,12 @@ namespace florinmtsc\notywidget;
 use Yii;
 use yii\base\Widget;;
 
+/**
+ * Widget class
+ *
+ * Class AlertWidget
+ * @package florinmtsc\notywidget
+ */
 class AlertWidget extends Widget
 {
     public $type;
@@ -15,6 +21,9 @@ class AlertWidget extends Widget
 
         parent::init();
 
+        /**
+         * plugin supported file types
+         */
         $supported_types = [ 'alert', 'success', 'error', 'warning', 'information', 'confirm' ];
 
         if ( ! in_array( $this->options['type'], $supported_types ) ) {
@@ -22,11 +31,9 @@ class AlertWidget extends Widget
             \Yii::$app->errorHandler->handleException( $exception );
         };
 
-        if ( !isset($this->options['text']) )
-            $this->options['text'] = '';
-        if ( !isset($this->options['type']) )
-            $this->options['type'] = '';
-
+        /**
+         * check for flashes returned by Yii::$app->session
+         */
         if (is_array($this->options['text'])) {
             if (count($this->options['text']) == 1) {
                 $this->options['text'] = reset($this->options['text']);
