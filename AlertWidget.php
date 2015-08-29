@@ -1,5 +1,5 @@
 <?php
-namespace florinmtsc\notywidget;
+namespace florinmtsc\notywidget\;
 
 use Yii;
 use yii\base\Widget;;
@@ -12,10 +12,16 @@ use yii\base\Widget;;
  */
 class AlertWidget extends Widget
 {
-    public $type;
-    public $options;
+    const SUPPORTED_TYPES = [
+        'alert',
+        'success',
+        'error',
+        'warning',
+        'information',
+        'confirm'
+    ];
 
-    protected $supported_types;
+    public $options;
 
     public function init() {
 
@@ -24,9 +30,7 @@ class AlertWidget extends Widget
         /**
          * plugin supported file types
          */
-        $supported_types = [ 'alert', 'success', 'error', 'warning', 'information', 'confirm' ];
-
-        if ( ! in_array( $this->options['type'], $supported_types ) ) {
+        if ( ! in_array( $this->options['type'], self::SUPPORTED_TYPES ) ) {
             $exception = new \yii\base\Exception( Yii::t( 'app', 'Please provide a valid alert type' ), '500' );
             \Yii::$app->errorHandler->handleException( $exception );
         };
