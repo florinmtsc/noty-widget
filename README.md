@@ -1,5 +1,8 @@
 # noty-widget
 <h2><a href="http://ned.im/noty/">Noty</a> (jQuery notification plugin) widget for Yii 2 framework</h2>
+<img src="https://thumbsplus.tutsplus.com/uploads/users/317/posts/22440/preview_image/preview.jpg?height=300&width=300"/>
+<br/>
+<img src="https://camo.githubusercontent.com/fc3bbac45e60cdcc1d582b6ab731c24735c49484/687474703a2f2f6e65642e696d2f6e6f74792f696d616765732f70726f6a656374732f6e6f74792d76322d6c6f676f2e706e67"/>
 
 <em>The credits for this great jquery plugin goes to https://github.com/needim/noty. <b>This is just an Yii2 widget developed based on this plugin</b></em>
 <br/>
