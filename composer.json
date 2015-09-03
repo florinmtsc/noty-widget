@@ -22,7 +22,7 @@
 	"minimum-stability": "stable",
     "require": {
         "yiisoft/yii2": "*",
-		"npm-asset/noty": "<=2.3.6"
+	"needim/noty": "^2.3"
     },
 
     "autoload": {
