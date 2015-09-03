@@ -26,7 +26,18 @@ Type <code><b>composer require florinmtsc/noty-widget</b></code> in your yii 2 a
 <h1>Usage</h1>
 <b><code>echo florinmtsc\notywidget\AlertWidget::widget(['options' => $options]);</code></b>
 <p>Where <em><b>$options</b></em> is an array with all the options available on the plugin page. Please visit the plugin <a href="http://ned.im/noty/#/about">official page</a> for documentation on the options available.</p>
-<b>In order to display the notification, you have to make sure you have <em>text</em> and <em>type</em> key values set in $options array.</b>
+<h1>There are different ways of using the plugin:</h1>
+<ul>
+  <li><h3>Load all flash types from session</h3>
+  <code>echo florinmtsc\notywidget\AlertWidget::widget(['options' => []])</code></li>
+  <li><h3>Load custom / session flash message with the desired type</h3>
+  echo florinmtsc\notywidget\AlertWidget::widget(['options' => []])
+  <code>echo florinmtsc\notywidget\AlertWidget::widget(['options' => [</code><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<code>'text' => 'Error message',</code><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<code>'type' => 'error',</code><br/>
+        ]]);</code></code>
+  </li>
+</ul>
 The <em>text</em> option stores the notification message and the <em>type</em> stores the type of the notification: <em>Alert</em>, <em>Success</em>, <em>Error</em>, <em>Warning</em>, <em>Information</em>, <em>Confirm</em>
 
 <b>Using Callback functions</b>
