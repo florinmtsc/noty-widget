@@ -1,6 +1,6 @@
 <?php
 
-use florinmtsc\notywidget\AlertAsset\AlertAsset;
+use frontend\widgets\notywidget\AlertAsset\AlertAsset;
 
 /**
  * Register widget AssetBundle

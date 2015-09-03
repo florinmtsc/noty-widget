@@ -30,15 +30,14 @@ class AlertWidget extends Widget
         /**
          * plugin supported file types
          */
-        if ( ! in_array( $this->options['type'], self::SUPPORTED_TYPES ) ) {
-            $exception = new \yii\base\Exception( Yii::t( 'app', 'Please provide a valid alert type' ), '500' );
-            \Yii::$app->errorHandler->handleException( $exception );
+        if (! isset($this->options['type'])) {
+            $this->options['type'] = AlertWidget::SUPPORTED_TYPES;
         };
 
         /**
          * check for flashes returned by Yii::$app->session
          */
-        if (is_array($this->options['text'])) {
+        if (isset($this->options['text']) && is_array($this->options['text'])) {
             if (count($this->options['text']) == 1) {
                 $this->options['text'] = reset($this->options['text']);
             } else {

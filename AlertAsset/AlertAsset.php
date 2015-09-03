@@ -12,7 +12,7 @@ use \yii\web\AssetBundle;
  */
 class AlertAsset extends AssetBundle
 {
-    public $sourcePath = "@npm/noty";
+    public $sourcePath = "@vendor/needim/noty";
 
     public $js = [
         'js/noty/jquery.noty.js',
@@ -41,10 +41,26 @@ class AlertAsset extends AssetBundle
         $settings = $options + self::_getDefaultOptions();
         unset($options);
 
+        if ($settings['text'] == '' && is_array($settings['type'])) {
+            foreach($settings['type'] as $type) {
+                $new_settings = $settings;
+                $new_settings['type'] = $type;
+                $new_settings['text'] = \Yii::$app->session->getFlash($type);
+                if (isset($new_settings['text']) && is_array($new_settings['text'])) {
+                    foreach($new_settings['text'] as $text) {
+                        $multipleFlashesSettings = $new_settings;
+                        $multipleFlashesSettings['text'] = $text;
+                        $view->registerJs(self::_run($multipleFlashesSettings, $callback));
+                    }
+                } elseif (isset($new_settings['text'])) {
+                    $view->registerJs(self::_run($new_settings, $callback));
+                }
 
-        if ( $settings['text'] !== '' ) {
+            }
+        } else {
             $view->registerJs(self::_run($settings, $callback));
         }
+
     }
 
     private static function _getDefaultOptions() {
